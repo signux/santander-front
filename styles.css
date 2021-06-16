@@ -1,0 +1,17 @@
+h1{
+    color: rgba(31, 31, 221, 0.685);
+    font-size: 25px;
+}
+h2{
+    color: #46484c;    
+}
+p{
+    color: #8b8b8bcc;    
+}
+button{
+    color: #fff;
+    background-color: crimson;
+}
+body{
+    background-color:cornflowerblue;
+}
