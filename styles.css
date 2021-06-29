@@ -1,6 +1,6 @@
 h1{
     color: rgba(31, 31, 221, 0.685);
-    font-size: 25px;
+    font-size: 50px;
 }
 h2{
     color: #46484c;    
@@ -13,7 +13,8 @@ button{
     background-color: crimson;
 }
 body{
-    background-color:dimgray;
+    /*background-color:dimgray;*/
+    margin-top: 100px;
 }
 .header {
     /*background-color: darkgoldenrod;*/
@@ -135,3 +136,77 @@ li{
   .info{
     background-color: cornsilk;
   }
+
+  .features{
+    display:grid;
+    /*
+    grid-template-columns:300px 300px;
+    grid-template-columns: repeat(2,300px);
+    grid-template-columns: 500px 1fr;
+    */
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template: repeat(2, 1fr) / repeat(2, 330px);
+  }
+
+  .feature-art{
+    background-color: lightcyan;
+    margin: 10px;
+    width:40%;
+    height: 50px;
+  }
+
+  /** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  /*body{
+    background-color: coral;
+  }*/
+  .navbar,
+  .actions{
+    display: none;
+  }
+  h1{
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+  .promo{
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .explanatory-video > video{
+    width: 100%;
+  }
+  .publish {
+    margin-top: 10px;
+  }
+  .publish > h3{
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  /*main{
+    
+  }*/
+}
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+}
